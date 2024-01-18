@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body {
+  background-image: url('background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  margin: 0; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.student-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-container img {
+  max-width: 100px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px; /* Add spacing between the image and text */
+}
+
+/* ... (remaining CSS code) */
+
+
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+.game-board {
+  margin-top: 20px;
+}
+
+.square {
+  font-size: 24px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.square.winner {
+  background-color: #7FFF00;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game-info {
+  flex: 1;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li button {
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  text-decoration: underline;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-row:not(:last-child) {
+  margin-bottom: 5px;
+}
